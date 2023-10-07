@@ -1,0 +1,35 @@
+@import "./header";
+@import "./aside";
+
+@font-face {
+  font-family: "Gillory";
+  src: url("../../public/images/fonts/Gilroy-Light.otf");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+section {
+  background-color: #f6f7f9;
+  padding: 10px;
+  font-family: "Gillory";
+}
+
+footer {
+  background-color: #2d416f;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Gillory";
+}
+
+.d-flex{
+  display: flex;
+}
+
+.my-2{
+  margin: 30px 0px;
+}

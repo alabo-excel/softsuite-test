@@ -1,0 +1,30 @@
+aside{
+  font-family: "Gillory";
+  background-color: white;
+  padding: 10px;
+  height: 80vh;
+
+  .org-toggle {
+    display: flex;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .bold-text {
+    font-weight: bold;
+    margin: 3px 0px;
+    font-size: 16px;
+    color: #2d416f;
+  }
+
+  .text {
+    margin: 3px 0px;
+    font-size: 16px;
+    color: #abb3c5;
+  }
+
+  .icon {
+    height: 20px;
+    margin: auto 20px;
+  }
+}
