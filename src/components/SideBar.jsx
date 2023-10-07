@@ -6,8 +6,8 @@ const SideBar = () => {
       <div className='org-toggle'>
         <img className='icon' src="./images/icons/tabler_switch-3.png" alt="" />
         <div>
-          <div className='text'>Change Organization</div>
-          <div className='bold-text'>PaperSoft Limited</div>
+          <div className='text'>Switch Module</div>
+          <div className='bold-text'>Payroll Management</div>
         </div>
         <img className='icon' src="./images/icons/dropdown.png" alt="" />
       </div>
