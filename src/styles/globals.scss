@@ -20,16 +20,21 @@ section {
   background-color: #f6f7f9;
   padding: 10px 40px;
   font-family: "Gillory";
-  width: 80%;
+  width: 75%;
+  margin-top: 100px;
+  margin-left: auto;
 }
 
 footer {
   background-color: #2d416f;
-  padding: 10px;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   color: white;
   font-family: "Gillory";
+  position: fixed;
+  bottom: 0;
+  width: 95%;
 }
 
 .d-flex {
@@ -85,15 +90,29 @@ footer {
       justify-content: space-evenly;
     }
   }
-  .warning{
-   text-align: center;
-   padding: 50px;
-   div{
-    justify-content: center;
-    img{
-      height: 20px;
-      margin-right: 20px;
+  .warning {
+    text-align: center;
+    padding: 50px;
+    div {
+      justify-content: center;
+      img {
+        height: 20px;
+        margin-right: 20px;
+      }
     }
-   }
+  }
+}
+
+table {
+  width: 100%;
+  thead {
+    background-color: #2d416f;
+    color: white;
+  }
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #CDE1E3;
   }
 }

@@ -2,8 +2,10 @@ aside{
   font-family: "Gillory";
   background-color: white;
   padding: 10px;
-  height: 80vh;
+  height: 100vh;
+  top: 12%;
   width: 20%;
+  position: fixed;
 
   .org-toggle {
     display: flex;

@@ -1,16 +1,48 @@
 import MainLayout from '@/layout/MainLayout'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchElements, selectElement } from '@/store/slices/elementSlice'
+import Table from '@/components/Table'
 
 export default function Home() {
   const elements = useSelector(selectElement)
   const dispatch = useDispatch()
-  dispatch(fetchElements())
+
 
   useEffect(() => {
+    dispatch(fetchElements())
     console.log(elements)
   }, [])
+
+  const columns =
+    [
+      {
+        Header: "Name",
+        accessor: "name",
+      },
+      {
+        Header: "Element Category",
+        accessor: "categoryValueId",
+      },
+      {
+        Header: "Element Classification",
+        accessor: "classificationValueId",
+      },
+      {
+        Header: "Status",
+        accessor: "status",
+      },
+      {
+        Header: "Date & Time Modified",
+        accessor: "createdAt",
+      },
+      {
+        Header: "Modified By",
+        accessor: "modifiedBy",
+      },
+    ]
+
+
   return (
     <MainLayout>
       <div>
@@ -40,7 +72,9 @@ export default function Home() {
               <img src="./images/icons/plus.png" alt="" />
             </button>
           </div>
-          {elements?.length >= 1 ? <div></div> :
+          {elements?.length >= 1 ? <div>
+            <Table columns={columns} data={elements} />
+          </div> :
             <div className='warning'>
               <img src="./images/warning.png" alt="" />
               <div className='d-flex'>
