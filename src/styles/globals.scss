@@ -113,6 +113,30 @@ table {
   td {
     padding: 10px;
     font-size: 14px;
-    border-bottom: 1px solid #CDE1E3;
+    border-bottom: 1px solid #cde1e3;
   }
+  img {
+    cursor: pointer;
+  }
+}
+
+.action-icon {
+  width: 20px;
+  margin-left: 15px;
+}
+
+.action-icon-child {
+  height: 20px;
+  width: 20px;
+  margin: auto 10px;
+}
+
+.warning {
+  color: #e05453;
+}
+
+.link-text {
+  margin: 3px 0px;
+  font-size: 16px;
+  color: #2d416f;
 }

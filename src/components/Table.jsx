@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTable } from "react-table";
+import ActionPopup from './ActionPopup';
 
 const Table = ({ columns, data }) => {
   const {
@@ -30,8 +31,10 @@ const Table = ({ columns, data }) => {
             prepareRow(row);
             return (
               <tr {...row.getRowProps()}>
-                {row.cells.map(cell => {
-                  return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
+                {row.cells.map((cell, index) => {
+                  return <td {...cell.getCellProps()}>
+                    {cell.column.id === 'action' ? <ActionPopup index={index} /> : cell.render("Cell")}
+                  </td>;
                 })}
               </tr>
             );

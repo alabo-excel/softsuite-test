@@ -40,6 +40,10 @@ export default function Home() {
         Header: "Modified By",
         accessor: "modifiedBy",
       },
+      {
+        Header: "Action",
+        accessor: "action",
+      },
     ]
 
 
