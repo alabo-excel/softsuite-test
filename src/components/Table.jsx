@@ -32,8 +32,8 @@ const Table = ({ columns, data }) => {
             return (
               <tr {...row.getRowProps()}>
                 {row.cells.map((cell, index) => {
-                  return <td {...cell.getCellProps()}>
-                    {cell.column.id === 'action' ? <ActionPopup index={index} /> : cell.render("Cell")}
+                  return <td key={index}>
+                    {cell.column.id === 'action' ? <ActionPopup index={i} /> : cell.render("Cell")}
                   </td>;
                 })}
               </tr>

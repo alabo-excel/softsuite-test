@@ -101,6 +101,14 @@ footer {
       }
     }
   }
+  .single-card{
+    width: 50%;
+    border: 1px solid #cde1e3;
+    padding: 10px 20px;
+    .text{
+      text-transform: uppercase;
+    }
+  }
 }
 
 table {
@@ -125,6 +133,7 @@ table {
   margin-left: 15px;
 }
 
+
 .action-icon-child {
   height: 20px;
   width: 20px;
@@ -139,4 +148,9 @@ table {
   margin: 3px 0px;
   font-size: 16px;
   color: #2d416f;
+}
+
+
+.mt-2{
+  margin-top: 10px;
 }

@@ -3,7 +3,7 @@ import { Dropdown } from 'antd';
 import Link from 'next/link';
 
 const ActionPopup = ({ index }) => {
-  // console.log(data)
+  // console.log(index)
 
   const items = [
     {
